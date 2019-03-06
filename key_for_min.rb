@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
         prev = item
       end
     end
-    return prev[1]
+    return prev[0]
   end
   nil
 end
