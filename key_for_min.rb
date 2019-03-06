@@ -6,9 +6,9 @@ def key_for_min_value(name_hash)
   if name_hash.length > 0
     name_hash.each do |item|
       if name_hash[prev]
-        prev = name_hash[prev] > name_hash[item] ? prev : name_hash[item]
+        prev = name_hash[prev] > name_hash[item] ? prev : item
       else
-        prev = name_hash[item]
+        prev = item
       end
     end
     return prev
